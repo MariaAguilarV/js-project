@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap');
+
+html {
+  font-size: 16px;
+
+}
+
+div {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+header {
+font-family: 'Francois One', sans-serif;
+}
+
+body {
+	text-align: center;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+
+main{
+  font-family: 'Patrick Hand', cursive;
+  grid-template-columns: 1fr 25rem;
+  font-size: 2rem;
+ }
+
+input{
+    font-family: 'Francois One', sans-serif;
+    line-height:inherit;
+    font-size: 2rem;
+    color:#2e3750;
+    min-width:4em;
+    border-radius: 1rem;
+    margin-top:25px;
+ }
+
+.userNum{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2rem;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 9999rem;
+    border-color: lightgrey;
+    outline:none;
+}
+
+
+.cold {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+  padding: 3px;
+  display: inline-block;
+  border-radius: 9999rem;
+  border:none;
+  outline:none;
+  box-shadow: inset 0 0 0 3px #fff,
+  0 0 0 4px #fff,
+  3px -3px 30px #1beabd,
+  -3px 3px 30px #10abff;
+}
+
+.hot {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+  padding: 3px;
+  display: inline-block;
+  border-radius: 9999rem;
+  border:none;
+  outline:none;
+  box-shadow: inset 0 0 0 3px #fff,
+  0 0 0 4px #fff,
+  3px -3px 30px #f02c00,
+  -3px 3px 30px #f22116;
+}
+
+.medium {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2rem;
+  padding: 3px;
+  display: inline-block;
+  border-radius: 9999rem;
+  border:none;
+  outline:none;
+  box-shadow: inset 0 0 0 3px #fff,
+  0 0 0 4px #fff,
+  3px -3px 30px #ffe945,
+  -3px 3px 30px #fcbf08;
+}
