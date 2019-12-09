@@ -76,27 +76,38 @@ function play(){
     //if numGuesses is 0 then show looser meesage
     else if (numGuesses == 0){
       console.log("Looser!");
-      document.getElementById("results").querySelector("p").innerHTML = "Wooo there are no more guesses. Try again!";
+      document.getElementById("results").querySelector("p").innerHTML = "Wooo there are no more guesses. The number was " + randomNum + "\n Try again!";
     }
     //always hide everything and show the "Play Again" button
+    document.getElementById("hint").innerHTML = "";
     document.getElementById("guideUser").innerHTML = "";
     document.getElementById("numGuess").innerHTML = "";
     document.querySelector("form").style.visibility = "hidden";
     document.getElementById("results").querySelector("input").type = "submit";
+    document.querySelector("#hint").setAttribute("class", "hint");
     document.querySelector("#userNumber").setAttribute("class", "userNum");
   }
   else {
     if (hot == true){
       console.log("Hot");
       document.querySelector("#userNumber").setAttribute("class", "hot");
+      //Update hint and change class to be colored in the css
+      document.getElementById("hint").innerHTML = "Ohhh, hot!";
+      document.querySelector("#hint").setAttribute("class", "hintHot");
     }
     else if (medium == true){
       console.log("Medium");
       document.querySelector("#userNumber").setAttribute("class", "medium");
+      //Update hint and change class to be colored in the css
+      document.getElementById("hint").innerHTML = "You are getting warmer";
+      document.querySelector("#hint").setAttribute("class", "hintWarm");
     }
     else if (cold == true){
       console.log("Cold");
       document.querySelector("#userNumber").setAttribute("class", "cold");
+      //Update hint and change class to be colored in the css
+      document.getElementById("hint").innerHTML = "You are cold";
+      document.querySelector("#hint").setAttribute("class", "hintCold");
     }
 
   }
@@ -115,6 +126,8 @@ function playAgain(){
   medium = false;
   document.querySelector("form").style.visibility = "visible";
   document.getElementById("numGuess").innerHTML = "You have 5 left guesses";
+  document.querySelector("#hint").setAttribute("class", "hint");
+  document.getElementById("hint").innerHTML = "";
   document.getElementById("guideUser").innerHTML = "";
   document.getElementById("results").querySelector("p").innerHTML = "";
   document.getElementById("results").querySelector("input").type = "hidden";

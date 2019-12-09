@@ -24,9 +24,13 @@ body {
 
 main{
   font-family: 'Patrick Hand', cursive;
-  grid-template-columns: 1fr 25rem;
+  grid-template-columns: 1fr 30rem;
   font-size: 2rem;
  }
+
+ section:nth-child(3){
+   font-size: 1.2rem;
+  }
 
 input{
     font-family: 'Francois One', sans-serif;
@@ -89,4 +93,28 @@ input{
   0 0 0 4px #fff,
   3px -3px 30px #ffe945,
   -3px 3px 30px #fcbf08;
+}
+
+.hintHot {
+  color: red;
+  text-shadow: 0 0 3px #fff,
+  0 0 4px #fff,
+  0 0 30px #f02c00,
+  0 0 30px #f22116;
+}
+
+.hintWarm {
+  color: orange;
+  text-shadow: 0 0 3px #fff,
+  0 0 4px #fff,
+  0 0 30px #ffe945,
+  0 0 30px #fcbf08;
+}
+
+.hintCold {
+  color: blue;
+  text-shadow: 0 0 3px #fff,
+  0 0 4px#fff,
+  0 0 30px #1beabd,
+  0 0 30px #10abff;
 }
